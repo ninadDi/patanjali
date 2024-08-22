@@ -1,0 +1,7 @@
+{
+  "name": "SutraPath",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
