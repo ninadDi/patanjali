@@ -1,0 +1,63 @@
+
+.category-container {
+    padding: 0 1px;
+  }
+  
+  .category-box {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .category-card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Background color for better visibility */
+  }
+  
+  .category-icon {
+    width: 7rem;
+    height: 7rem;
+    margin-right: 15px;
+    object-fit: cover;
+  }
+  
+  .sutra-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sutra-details h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #333;
+  }
+  
+  .sutra-details h6 {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* Hide scrollbar for webkit (Chrome, Safari, Edge) */
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  
+  /* Optional: Add styles to the scrollbar track (the area behind the thumb) */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Optional: Add styles to the scrollbar thumb (the draggable part) */
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  

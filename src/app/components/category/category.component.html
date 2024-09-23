@@ -1,0 +1,62 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>Categories</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <div class="caregory-container category-box">
+    <ng-container *ngFor="let category of categories">
+      <div (click)="navigateToCategory(category)">
+        <div class="category-card">
+          <img
+            class="category-icon"
+            *ngIf="category.image"
+            [src]="category.image"
+            alt="Slide Image"
+          />
+          <img
+            *ngIf="!category.image"
+            src="../assets/patanjali-bg.png"
+            class="list-icon"
+          />
+          <div class=""sutra-details>
+          <h3>{{ category?.name }}</h3>
+          <h6>No of Sutras - {{category.sutras_count}}</h6>
+        </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</ion-content> -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title> {{selectedLanguage === 'en' ? 'Categories' : 'वर्ग'}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="category-container category-box">
+    <ng-container *ngFor="let category of categories">
+      <div class="category-card" (click)="navigateToCategory(category.id)">
+        <img
+          class="category-icon"
+          *ngIf="category.imageUrl"
+          [src]="category.imageUrl"
+          alt="Slide Image"
+        />
+        <img
+        class="category-icon"
+          *ngIf="!category.imageUrl"
+          src="../assets/patanjali-bg.png"
+          class="list-icon"
+        />
+        <div class="sutra-details">
+          <h3>{{ category?.title | json }}</h3>
+          <h6>  {{ selectedLanguage === 'hi' ? 'सूत्रों की संख्या' : 'No of Sutras' }} - {{category.sutras  }}
+          </h6>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</ion-content>

@@ -1,0 +1,296 @@
+[
+    {
+        "id": 1,
+        "title": {
+            "en": "Samadhi (Integration)",
+            "hi": "समाधि (एकीकरण)"
+        },
+        "Focus": {
+            "en": "The theory of yoga, outlining the nature of the mind and the purpose of yoga as the stilling of mental fluctuations.",
+            "hi": "योग का सिद्धांत, जिसमें मन की प्रकृति और मानसिक उतार-चढ़ाव को शांत करने के रूप में योग के उद्देश्य का विवरण है।"
+        },
+        "themes": {
+            "en": "The nature of consciousness, the process of meditation, and the obstacles to achieving samadhi (a state of meditative absorption).",
+            "hi": "चेतना की प्रकृति, ध्यान की प्रक्रिया, और समाधि (ध्यानात्मक अवशोषण की अवस्था) प्राप्त करने में आने वाली बाधाएं।"
+        },
+        "sutras": {
+            "en": 51,
+            "hi": "५१ सूत्र"
+        },
+        "imgUrl": "assets/integration.jpg"
+    },
+    {
+        "id": 2,
+        "title": {
+            "en": "Sadhana (The Path)",
+            "hi": "साधना (मार्ग)"
+        },
+        "Focus": {
+            "en": "The practical aspects of yoga, discussing the methods to overcome obstacles and the various stages of yoga practice.",
+            "hi": "योग के व्यावहारिक पहलू, बाधाओं को दूर करने के तरीकों और योग अभ्यास के विभिन्न चरणों पर चर्चा।"
+        },
+        "themes": {
+            "en": "The Eightfold Path (Ashtanga Yoga), which includes yama (restraints), niyama (observances), asana (posture), pranayama (breath control), pratyahara (withdrawal of the senses), dharana (concentration), dhyana (meditation), and samadhi (integration).",
+            "hi": "अष्टांग योग, जिसमें यम (नियम), नियम (आचरण), आसन (शरीर स्थिति), प्राणायाम (श्वास नियंत्रण), प्रत्याहार (इंद्रियों का संयम), धारणा (एकाग्रता), ध्यान (ध्यान), और समाधि (एकीकरण) शामिल हैं।"
+        },
+        "sutras": {
+            "en": 55,
+            "hi": "५५ सूत्र"
+        },
+        "imgUrl": "assets/path.jpg"
+    },
+    {
+        "id": 3,
+        "title": {
+            "en": "Vibhuti (The Extraordinary Powers)",
+            "hi": "विभूति (असाधारण शक्तियाँ)"
+        },
+        "Focus": {
+            "en": "The powers and capabilities that can arise as by-products of advanced yoga practice.",
+            "hi": "उन्नत योग अभ्यास के उप-उत्पाद के रूप में उत्पन्न हो सकने वाली शक्तियाँ और क्षमताएँ।"
+        },
+        "themes": {
+            "en": "The nature of siddhis (supernatural powers) and their relevance to the yogic path, emphasizing that these powers are not the goal of yoga.",
+            "hi": "सिद्धियों (अलौकिक शक्तियों) की प्रकृति और योगिक मार्ग में उनकी प्रासंगिकता, इस पर जोर देते हुए कि ये शक्तियाँ योग का लक्ष्य नहीं हैं।"
+        },
+        "sutras": {
+            "en": 56,
+            "hi": "५६ सूत्र"
+        },
+        "imgUrl": "assets/powers.jpg"
+    },
+    {
+        "id": 4,
+        "title": {
+            "en": "Kaivalya (Liberation)",
+            "hi": "कैवल्य (मुक्ति)"
+        },
+        "Focus": {
+            "en": "The final goal of yoga, which is kaivalya or liberation.",
+            "hi": "योग का अंतिम लक्ष्य, जो कैवल्य या मुक्ति है।"
+        },
+        "themes": {
+            "en": "The nature of liberation, the process of achieving it, and the state of the liberated soul.",
+            "hi": "मुक्ति की प्रकृति, उसे प्राप्त करने की प्रक्रिया, और मुक्त आत्मा की अवस्था।"
+        },
+        "sutras": {
+            "en": 34,
+            "hi": "३४ सूत्र"
+        },
+        "imgUrl": "assets/liberation.jpg"
+    },
+    
+    {
+        "id": 5,
+        "title": {
+          "en": "Emotional Balance and Mental Clarity",
+          "hi": "भावनात्मक संतुलन और मानसिक स्पष्टता"
+        },
+        "Focus": {
+          "en": "Achieving emotional stability and clarity of mind through yogic techniques.",
+          "hi": "योगिक तकनीकों के माध्यम से भावनात्मक स्थिरता और मन की स्पष्टता प्राप्त करना।"
+        },
+        "themes": {
+          "en": "Mind control, meditation, and the stilling of mental fluctuations.",
+          "hi": "मन का नियंत्रण, ध्यान और मानसिक उतार-चढ़ाव को शांत करना।"
+        },
+        "sutras": {
+          "en": 12,
+          "hi": "१२ सूत्र"
+        },
+        "imgUrl": "assets/samadhi.png",
+        "sutrasList": [2, 33, 34, 35, 36, 37, 38, 39, 47, 48, 54, 55]
+      },
+      {
+        "id": 6,
+        "title": {
+          "en": "Detachment and Non-Attachment (Vairagya)",
+          "hi": "वैराग्य (अनासक्ति और वैराग्य)"
+        },
+        "Focus": {
+          "en": "Practicing non-attachment to desires and ego for spiritual freedom.",
+          "hi": "आध्यात्मिक स्वतंत्रता के लिए इच्छाओं और अहंकार से अनासक्ति का अभ्यास।"
+        },
+        "themes": {
+          "en": "Detachment, overcoming ignorance, and liberation from mental conditioning.",
+          "hi": "वैराग्य, अज्ञान को दूर करना और मानसिक स्थिति से मुक्ति।"
+        },
+        "sutras": {
+          "en": 10,
+          "hi": "१० सूत्र"
+        },
+        "imgUrl": "assets/kriya.png",
+        "sutrasList": [12, 13, 14, 15, 16, 3, 4, 9, 50, 29, 30]
+      },
+      {
+        "id": 7,
+        "title": {
+          "en": "Overcoming Obstacles and Cultivating Resilience",
+          "hi": "बाधाओं को दूर करना और धैर्य को विकसित करना"
+        },
+        "Focus": {
+          "en": "Methods to overcome mental and physical obstacles using yogic discipline.",
+          "hi": "योगिक अनुशासन का उपयोग करके मानसिक और शारीरिक बाधाओं को दूर करने के तरीके।"
+        },
+        "themes": {
+          "en": "Dealing with distractions and hindrances in the path of yoga.",
+          "hi": "योग मार्ग में आने वाले विकर्षणों और बाधाओं से निपटना।"
+        },
+        "sutras": {
+          "en": 10,
+          "hi": "१० सूत्र"
+        },
+        "imgUrl": "assets/ashthanga.png",
+        "sutrasList": [30, 31, 1, 2, 10, 11, 16, 17, 10, 27, 28]
+      },
+      {
+        "id": 8,
+        "title": {
+          "en": "Spiritual Law of Attraction and Manifestation",
+          "hi": "आध्यात्मिक आकर्षण और सृजन का सिद्धांत"
+        },
+        "Focus": {
+          "en": "Using yogic principles to manifest intentions through focused awareness.",
+          "hi": "सजगता पर ध्यान केंद्रित करके इच्छाओं को प्रकट करने के लिए योगिक सिद्धांतों का उपयोग करना।"
+        },
+        "themes": {
+          "en": "Creating reality through the mind's focus and intent.",
+          "hi": "मन के ध्यान और इरादे से वास्तविकता का निर्माण।"
+        },
+        "sutras": {
+          "en": 10,
+          "hi": "१० सूत्र"
+        },
+        "imgUrl": "assets/siddhis.png",
+        "sutrasList": [18, 16, 19, 20, 21, 22, 23]
+      },
+      {
+        "id": 14,
+        "title": {
+          "en": "Inner Peace and Liberation",
+          "hi": "आंतरिक शांति और मुक्ति"
+        },
+        "Focus": {
+          "en": "The ultimate goal of yoga: attaining inner peace and liberation (Kaivalya).",
+          "hi": "योग का अंतिम लक्ष्य: आंतरिक शांति और कैवल्य की प्राप्ति।"
+        },
+        "themes": {
+          "en": "Self-realization, freedom from suffering, and reaching a state of pure consciousness.",
+          "hi": "आत्म-साक्षात्कार, पीड़ा से मुक्ति और शुद्ध चेतना की स्थिति तक पहुँचना।"
+        },
+        "sutras": {
+          "en": 10,
+          "hi": "१० सूत्र"
+        },
+        "imgUrl": "assets/kaivalya.png",
+        "sutrasList": [3, 4, 25, 26, 25, 34]
+      },
+      {
+        "id": 9,
+        "title": {
+          "en": "Mindfulness and Presence",
+          "hi": "सतर्कता और उपस्थिति"
+        },
+        "Focus": {
+          "en": "Being fully present in the moment, cultivating mindfulness through concentration and meditation.",
+          "hi": "क्षण में पूरी तरह से उपस्थित होना, एकाग्रता और ध्यान के माध्यम से सतर्कता को विकसित करना।"
+        },
+        "themes": {
+          "en": "Techniques to focus the mind and develop present-moment awareness.",
+          "hi": "मन को केंद्रित करने और वर्तमान क्षण की सजगता विकसित करने के तरीके।"
+        },
+        "sutras": {
+          "en": 9,
+          "hi": "९ सूत्र"
+        },
+        "imgUrl": "assets/mindfulness.png",
+        "sutrasList": [41, 42, 43, 44, 54, 55, 1, 2, 11, 12]
+      },
+      {
+        "id": 10,
+        "title": {
+          "en": "Purification and Self-Discipline",
+          "hi": "शुद्धि और आत्म-अनुशासन"
+        },
+        "Focus": {
+          "en": "The practices of self-discipline, austerity, and purification as fundamental to spiritual growth.",
+          "hi": "आध्यात्मिक विकास के लिए आत्म-अनुशासन, तप और शुद्धि का अभ्यास।"
+        },
+        "themes": {
+          "en": "Purifying the mind and body to create space for higher spiritual practices.",
+          "hi": "उच्चतर आध्यात्मिक अभ्यासों के लिए मन और शरीर को शुद्ध करना।"
+        },
+        "sutras": {
+          "en": 8,
+          "hi": "८ सूत्र"
+        },
+        "imgUrl": "assets/purification.png",
+        "sutrasList": [29, 30, 31, 32, 40, 41, 45, 6, 9]
+      },
+      {
+        "id": 11,
+        "title": {
+          "en": "Self-Study and Knowledge",
+          "hi": "स्वाध्याय और ज्ञान"
+        },
+        "Focus": {
+          "en": "Developing knowledge of the self through study and practice.",
+          "hi": "अध्ययन और अभ्यास के माध्यम से आत्मज्ञान प्राप्त करना।"
+        },
+        "themes": {
+          "en": "Gaining self-awareness and wisdom through the process of self-reflection.",
+          "hi": "आत्म-प्रतिबिंब के माध्यम से आत्म-जागरूकता और ज्ञान प्राप्त करना।"
+        },
+        "sutras": {
+          "en": 7,
+          "hi": "७ सूत्र"
+        },
+        "imgUrl": "assets/self_study.jpg",
+        "sutrasList": [44, 28, 29, 5, 13, 15]
+      },
+      {
+        "id": 12,
+        "title": {
+          "en": "Power of Concentration",
+          "hi": "एकाग्रता की शक्ति"
+        },
+        "Focus": {
+          "en": "Harnessing the power of deep concentration to achieve focus and awareness.",
+          "hi": "ध्यान और एकाग्रता के माध्यम से गहरी सजगता प्राप्त करना।"
+        },
+        "themes": {
+          "en": "Cultivating one-pointed focus through concentration techniques.",
+          "hi": "एकाग्रता तकनीकों के माध्यम से एकाग्रता को विकसित करना।"
+        },
+        "sutras": {
+          "en": 10,
+          "hi": "१० सूत्र"
+        },
+        "imgUrl": "assets/concentration.png",
+        "sutrasList": [1, 2, 3, 4, 5, 6, 8, 41]
+      },
+      {
+        "id": 13,
+        "title": {
+          "en": "Powers and Siddhis",
+          "hi": "शक्तियाँ और सिद्धियाँ"
+        },
+        "Focus": {
+          "en": "Exploring the supernatural powers (siddhis) that may develop as by-products of yoga practice.",
+          "hi": "योग अभ्यास के उप-उत्पाद के रूप में विकसित होने वाली अलौकिक शक्तियों (सिद्धियों) की खोज।"
+        },
+        "themes": {
+          "en": "The nature of siddhis and their importance in the path of yoga.",
+          "hi": "सिद्धियों की प्रकृति और योग मार्ग में उनका महत्व।"
+        },
+        "sutras": {
+          "en": 12,
+          "hi": "१२ सूत्र"
+        },
+        "imgUrl": "assets/siddhis1.png",
+        "sutrasList": [16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
+      }
+    ]
+        
+
+

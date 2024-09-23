@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{selectedLanguage === 'en' ? 'Ashthanga' : 'अष्टांग'}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="category-container category-box">
+    <ng-container *ngFor="let category of categories">
+      <div class="category-card" (click)="navigateToAshthanga(category.id)">
+        <img
+          class="category-icon"
+          *ngIf="category.imageUrl"
+          [src]="category.imageUrl"
+          alt="Slide Image"
+        />
+        <img
+          class="category-icon"
+          *ngIf="!category.imageUrl"
+          src="../assets/patanjali-bg.png"
+        />
+        <div class="sutra-details">
+          <h3>{{ category?.title | json }}</h3>
+          <h6>{{ category.focus | slice:0:50 }}{{ category.focus.length > 50 ? '...' : '' }}</h6>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</ion-content>

@@ -1,0 +1,76 @@
+ion-content {
+  --background: #f0f0f5; 
+  padding: 200px;
+  
+}
+.language-container {
+  position: relative; /* Establish a positioning context for the overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  text-align: center;
+  background-image: url('/assets/samadhi.png');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.language-container::before {
+  content: ""; 
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); 
+  z-index: 1; 
+}
+
+.language-container > * {
+  position: relative; 
+  z-index: 2;
+}
+
+h3 {
+  color: white;
+  font-weight: 400;
+}
+ion-item {
+  --background: white;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0px 4px 8px #03071e; 
+  transition: transform 0.2s ease;
+  width: 80%;
+  border: 2px solid #03071e;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+ion-item:hover {
+  transform: scale(1.05); 
+}
+
+ion-label {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #333; 
+  text-align: center;
+  width: 100%;
+}
+
+ion-item:focus {
+  background-color: #e0e0e5; 
+}
+
+ion-toolbar {
+  --background: #03071e; 
+  --color: white;
+}
+
+ion-title {
+  text-align: center;
+  font-weight: bold;
+}

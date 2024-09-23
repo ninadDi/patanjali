@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+    <ion-back-button defaultHref="/" text="वापस" *ngIf="selectedLanguage === 'hi'"></ion-back-button>
+    <ion-back-button defaultHref="/" text="Back" *ngIf="selectedLanguage !== 'hi'"></ion-back-button>
+  </ion-buttons>
+    <ion-title>{{ title }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="sutra">
+    <ion-card>
+      <img [alt]="title" [src]="sutra.imgUrl" />
+      <ion-card-header>
+        <ion-card-title> {{ title }}</ion-card-title>
+        <ion-card-subtitle>{{ focus }}</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        <h4>
+          {{ selectedLanguage === 'hi' ? 'मुख्य विषय' : 'Key Themes' }}
+        </h4>
+        <p>{{ themes }}</p>
+        <h4>
+          {{ selectedLanguage === 'hi' ? 'सूत्र' : 'Sutras' }}
+        </h4>
+        <p>{{ sutrasCount }}</p>
+      </ion-card-content>
+      </ion-card>
+      
+    <!-- <ion-button>Know More</ion-button> -->
+  </div>
+
+  <app-sutra-list  [title]="title" [selectedLanguage]="selectedLanguage"></app-sutra-list>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" >
+    <ion-fab-button (click)="scrollToTop()">
+      <ion-icon name="arrow-up"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

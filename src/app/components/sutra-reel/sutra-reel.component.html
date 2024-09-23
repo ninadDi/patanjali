@@ -1,0 +1,95 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>Sutra</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="closeModal()">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <swiper-container
+    #swiper
+    pagination="true" 
+    pagination-clickable="true"
+    style=" --swiper-pagination-color: white; --swiper-pagination-bullet: white"
+    autoplay-disable-on-interaction="true"
+    [initialSlide]="0"
+    [slidesPerView]="1"
+    *ngIf="sutraPages"
+  >
+    <!-- Title Slide -->  
+    <swiper-slide>
+      <ion-card class="reel-card sanskrit-card">
+        <ion-button (click)="toggleBookmark(sutraPages.id)" [ngStyle]="{'--background': color, 'color': 'black', 'margin-bottom': '20px'}">
+          <ion-icon  style="margin-right:5px" [name]="isBookmarked ? 'star' : 'star-outline'"></ion-icon>{{isBookmarked ? 'In favorites' : 'Add to favorite'}}
+        </ion-button>
+        <ion-card-header>
+          <ion-card-title class="sanskrit-text">{{sutraPages.title.original}}</ion-card-title>
+          <ion-card-subtitle class="sanskrit-transliteration">{{sutraPages.title.original_english}}</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <h3>{{sutraPages.meaning[selectedLanguage]}}</h3>
+        </ion-card-content>
+      </ion-card>
+    </swiper-slide> 
+
+    <!-- Translation Slides -->
+    <swiper-slide *ngFor="let translation of sutraPages.translations">
+      <ion-card class="reel-card">
+        <div class="page-details">
+          <div class="page-number"><h1> 0{{translation.page}}</h1></div>
+          <div class="page-title">
+            <h1 *ngIf="translation.text">{{translation.text.original}} {{translation.text.original_english}}</h1>
+            <h1 *ngIf="translation.contextual_interpretation">{{ selectedLanguage === 'hi' ? 'संदर्भित व्याख्या' : 'Contextual Interpretation' }}</h1>
+          </div>
+      </div>
+        <!-- Display Text and Meaning if available -->
+        <ion-card-header *ngIf="translation.meaning">
+          <ion-card-title><span style="border-bottom: 1px solid white; display: block; margin-bottom:15px;">
+            {{ selectedLanguage === 'hi' ? 'शाब्दिक अर्थ' : 'Literal Meaning:' }}
+          </span>
+          
+            <p>{{translation.meaning[selectedLanguage]}}</p></ion-card-title>
+          <ion-card-subtitle></ion-card-subtitle>
+        </ion-card-header>
+        <!-- <ion-card-content *ngIf="translation.meaning">
+          <p>{{translation.meaning[selectedLanguage]}}</p>
+        </ion-card-content> -->
+
+        <!-- Display significance if available -->
+        <ion-card-header *ngIf="translation.significance">
+          <ion-card-title><span style="border-bottom: 1px solid white; margin-bottom:15px;">
+            {{ selectedLanguage === 'hi' ? 'महत्व' : 'Significance:' }}
+          </span>
+          <p> {{translation.significance[selectedLanguage]}}</p>
+        </ion-card-title>
+        </ion-card-header>
+
+        <!-- Display contextual interpretation if available -->
+        <ion-card-content *ngIf="translation.contextual_interpretation">
+          <p *ngIf="!translation.deeper_implications"> {{translation.contextual_interpretation[selectedLanguage]}}</p>
+          <span class="deeper-implications" *ngIf="translation.deeper_implications"> {{translation.contextual_interpretation[selectedLanguage]}}</span>
+
+        </ion-card-content>
+
+        <!-- Display deeper implications if available -->
+        <ion-card-content *ngIf="translation.deeper_implications">
+          <ion-card-title><span style="border-bottom: 1px solid white; display: block; margin-bottom:15px;">
+            {{ selectedLanguage === 'hi' ? 'गहन निहितार्थ' : 'Deeper Implications:' }}
+          </span>    <span class="deeper-implications"> {{translation.deeper_implications[selectedLanguage]}}</span>
+        </ion-card-title>
+        </ion-card-content>
+      </ion-card>
+    </swiper-slide>
+  </swiper-container>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="closeModal()">
+      <ion-icon name="close"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
+  

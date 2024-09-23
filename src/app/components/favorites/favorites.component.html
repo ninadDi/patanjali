@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/category" text="वापस" *ngIf="selectedLanguage === 'hi'"></ion-back-button>
+      <ion-back-button defaultHref="/category" text="Back" *ngIf="selectedLanguage !== 'hi'"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ selectedLanguage === 'en'? 'Favourites' : 'पसंदीदा' }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div>
+    <ion-card>
+      <img [alt]="title" [src]="imgUrl" />
+
+    </ion-card>
+  </div>
+  <app-sutra-list [title]="title" [selectedLanguage]="selectedLanguage"></app-sutra-list>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" >
+    <ion-fab-button (click)="scrollToTop()">
+      <ion-icon name="arrow-up"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

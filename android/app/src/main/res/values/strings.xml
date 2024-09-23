@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Patanjali Wisdom</string>
+    <string name="title_activity_main">Patanjali Wisdom</string>
+    <string name="package_name">com.PatanjaliWisdom.app</string>
+    <string name="custom_url_scheme">com.PatanjaliWisdom.app</string>
+</resources>

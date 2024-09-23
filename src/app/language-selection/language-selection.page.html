@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Select Language</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-list class="language-container" >
+    <h3>SELECT LANGUAGE <p>भाषा चुनें</p> </h3>
+
+
+    <ion-item *ngFor="let language of languages" (click)="selectLanguage(language.code)">
+      <ion-label>{{ language.label }}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
